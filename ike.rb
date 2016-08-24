@@ -225,7 +225,7 @@ index e141e3f..e6ba9ce 100644
  	TARGETS ss_idb
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
 diff --git a/source/libike/CMakeLists.txt b/source/libike/CMakeLists.txt
 index 0336c40..2445f67 100644
 --- a/source/libike/CMakeLists.txt
@@ -235,7 +235,7 @@ index 0336c40..2445f67 100644
  	TARGETS ss_ike
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
  
 diff --git a/source/libip/CMakeLists.txt b/source/libip/CMakeLists.txt
 index b7d3eb2..a1a7ffa 100644
@@ -246,7 +246,7 @@ index b7d3eb2..a1a7ffa 100644
  	TARGETS ss_ip
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
 diff --git a/source/libith/CMakeLists.txt b/source/libith/CMakeLists.txt
 index 1f4f6f1..140ab02 100644
 --- a/source/libith/CMakeLists.txt
@@ -256,7 +256,7 @@ index 1f4f6f1..140ab02 100644
  	TARGETS ss_ith
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
 diff --git a/source/liblog/CMakeLists.txt b/source/liblog/CMakeLists.txt
 index d0b619c..73e3ed7 100644
 --- a/source/liblog/CMakeLists.txt
@@ -266,7 +266,7 @@ index d0b619c..73e3ed7 100644
  	TARGETS ss_log
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
  
 diff --git a/source/libpfk/CMakeLists.txt b/source/libpfk/CMakeLists.txt
 index ffca9af..9ba547a 100644
@@ -277,7 +277,7 @@ index ffca9af..9ba547a 100644
  	TARGETS ss_pfk
  	LIBRARY DESTINATION ${PATH_LIB}
 -	FRAMEWORK DESTINATION "/Library/Frameworks" )
-+	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/Frameworks" )
++	FRAMEWORK DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
  
 diff --git a/source/libqt/CMakeLists.txt b/source/libqt/CMakeLists.txt
 index 9cf8087..95c210c 100644
@@ -337,7 +337,7 @@ index 9cf8087..95c210c 100644
  		CODE "execute_process( COMMAND \"ln\" -s
  			Versions/4/Resources
 -			/Library/Frameworks/ShrewSoftQtGui.framework/Resources )" )
-+			${CMAKE_INSTALL_PREFIX}/Frameworks/ShrewSoftQtGui.framework/Resources )" )
++			${CMAKE_INSTALL_PREFIX}/lib/ShrewSoftQtGui.framework/Resources )" )
  
  	install(
  		DIRECTORY "${QT_LIBRARY_DIR}/QtGui.framework/Versions/4/Resources"
